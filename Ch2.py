@@ -1,6 +1,7 @@
 #
 '''
-
+Chapter 2
+Introduction to Programming Using Python
 Create by Fei on Sep 13 2019
 '''
 '''
@@ -135,4 +136,8 @@ totalamount = round(totalamount, 2)
 print('After the sixth month, the account value is', totalamount)
 '''
 # 2.22
+year2 = eval(input('Enter the number of years: '))
+year22 = year2*3600*24*365
+popu = 312032486 + year22//7 + year22//45 - year22//13
+print('The population in', year2,'years is', popu)
 
