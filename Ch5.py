@@ -59,10 +59,46 @@ print("Correct count is", correctCount, "out of",NUMBER_OF_QUESTIONS, "\nTest ti
 print('公斤\t|\t磅')
 for i in range(1,200):
     print(i,'\t|\t',format(i*2.2,'.1f'))
-'''
+
 # 5.4
 print('-'*30)
 print('英里\t|\t  公里')
+print('-'*30)
 for i in range(1,11):
     print(i,'\t|\t',format(i*1.609,'.3f'))
     print('-'*30)
+
+# 5.5
+print('-'*40)
+print('公斤 \t 磅\t| 磅 \t 公斤')
+print('-'*40)
+for i in range(1,200,2):
+    print(format(i,'<3d'),'\t',format(i*2.2,'5.1f'),end = ' ')
+    print('|',end = ' ')
+    j = round(17.5+2.5*i)
+    print(format(j,'<3d'),'\t',format(j/2.2,'5.2f'))
+
+# 5.6
+print('-'*40)
+print('Miles\tKilometers\t| Kilometers \t Miles')
+print('-'*40)
+for i in range(1,11,1):
+    print(format(i,'<3d'),'\t',format(i*1.609,'6.3f'),end = ' ')
+    print('|',end = ' ')
+    j = round(15+5*i)
+    print(format(j,'<3d'),'\t',format(j/1.609,'6.3f'))
+
+# 5.7
+from math import pi,sin,cos
+print('Degree\t  Sin  \tCos')
+for i in range(0,361,10):
+    radi = i/180*pi
+    print(format(i,'<6d'),format(sin(radi),'8.4f'),format(cos(radi),'>6.4f'))
+
+# 5.8
+from math import sqrt
+print('Number\tSquare Root')
+for i in range(0,21,2):
+    print(format(i,'<7d'),format(sqrt(i),'<6.4f'))
+'''
+# 5.9
